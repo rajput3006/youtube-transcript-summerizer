@@ -1,0 +1,428 @@
+#navbar{
+    height: 60px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 50px;
+    padding-top:25px ;
+    font-weight: 900;
+    text-align: center;
+    text-align:bottom;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    border: 2px solid red;
+    margin-left: 10px;
+}
+#signin{
+    height: 45px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+button:focus, input:focus {
+    outline: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*-------------Layout-------------*/
+
+
+@media (min-width: 800px) {
+    #nav-wrapper {
+        overflow: hidden;
+   }
+    #nav {
+        overflow: hidden;
+        flex-direction: row;
+   }
+    .nav-link {
+        border-top: none;
+   }
+    .right {
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        left: 1.5em;
+        height: auto;
+   }
+    .btn-nav {
+        display: none;
+   }
+    .nava:link.active, a:visited.active, a:active.active {
+        background: #f857a8;
+        background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
+        background: linear-gradient(45deg, #f857a8, #ff5858);
+        color: #fff;
+   }
+    .nav-link-span {
+        transform: skew(20deg);
+        display: inline-block;
+   }
+    .nav-link {
+        transform: skew(-20deg);
+        color: #f857a8;
+        text-decoration: none;
+   }
+    .nav-link:last-child {
+        padding-right: 3em;
+   }
+    a:hover.nav-link:not(.active) {
+        color:#f857a8;
+        background: #ddd;
+        background: linear-gradient(45deg, #fff, #ddd);
+   }
+}
+@keyframes logo-hover {
+    20% {
+        padding-right: 0em;
+   }
+    100% {
+        padding-right: 5em;
+   }
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+body {
+    background-color: #f8f9fa;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+.lan{
+    color:black;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #030507;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button {
+    background-color:grey;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color:#000000;
+}
+.container {
+    max-width: 700px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-image: url("https://w0.peakpx.com/wallpaper/57/343/HD-wallpaper-youtube-red-logo-red-brickwall-youtube-logo-brands-youtube-neon-logo-youtube.jpg");
+}
+.link{
+    padding: 20px;
+}
+/* CSS FOR SUMMORISED OUTPUT */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/401/677/small_2x/abstract-polygonal-shape-black-background-free-vector.jpg");
+}
+.outputcontainer {
+    max-width: 80%;
+    margin: 50px auto;
+    height: max-content;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.video-box {
+    margin-top: 20px;
+    padding: 20px;
+    height: max-content;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.video-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.video-description {
+    font-size: 16px;
+    color: black;
+}
+.lan{
+    color: white;
+}
+h2{
+    color: white;
+    font-size: 40px;
+}
+h1{
+    color: black;
+}
+.footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    min-height: 150px;
+    border: 0;
+    outline: 0;
+    padding: 5px 5px 5px 5px;
+}
+
+nav {
+    background-color: #636afc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* .socialIcons a{
+    
+    padding: 6px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 50%;
+} 
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+} */
+
+/* Parent container */
+.socialIcons-container {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #000; /* Add a background if needed for better contrast */
+}
+
+/* Social icons */
+.socialIcons {
+    display: flex; /* Align items horizontally */
+    gap: 20px; /* Add space between the icons */
+}
+
+.socialIcons a {
+    display: flex; /* Make the icon container flexible */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+    width: 60px; /* Set a consistent width for each icon */
+    height: 60px; /* Set a consistent height for each icon */
+    background-color: white; /* Default background color */
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.socialIcons a i {
+    font-size: 1.5em; /* Icon size */
+    color: black; /* Default icon color */
+    transition: color 0.3s; /* Smooth icon color change */
+}
+
+.socialIcons a:hover {
+    background-color: #111; /* Darker background on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.socialIcons a:hover i {
+    color: white; /* Change icon color on hover */
+}
+
+
+
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width:700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+     }
+}
+@media (max-width:700px){
+    #navbar{
+        
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+     }
+}
+
+  .header-signin {
+    background-color:black; 
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  #navbar {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    /* border: black;
+     */
+     border: none;
+  }
+  
+  #signin {
+    padding: 10px 20px;
+    background-color: #808080; /* Grey button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  #signin:hover {
+    background-color: #000000; /* Black color on hover */
+  }
+  
+  /* Large screens (desktop, min-width: 769px) */
+  @media (min-width: 769px) {
+    .header-signin {
+      flex-direction: row;
+    }
+  }
+  
+  /* Tablet screens (medium screens, 481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .header-signin {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    #navbar {
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+  
+    #signin {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Mobile screens (small screens, max-width: 480px) */
+  @media (max-width: 480px) {
+    .header-signin {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    #navbar {
+      font-size: 1.1em;
+      margin-bottom: 6px;
+    }
+  
+    #signin {
+      font-size: 0.8em;
+      padding: 6px 12px;
+    }
+  }
+  
