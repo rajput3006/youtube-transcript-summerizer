@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"/> 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header class="header-signin">
+        <div id="navbar">
+          YOUTUBE TRANSCRIPT SUMMARISER
+        </div>
+        <button id="signin" type="button">Sign In</button>
+    </header>
+    <main>
+      <section id="home">
+        <div class="container">
+          <h2>YouTube Link Input Section</h2>
+          <div class = "link">
+          <form action="#" method="POST">
+            <label for="user_in">Enter a Link:</label>
+            <input
+              type="text"
+              id="user_in"
+              name="user_in"
+              placeholder="Example:Nckx9qMy"
+              required
+            />
+            <div class="link">
+              <label for="languages" class="lan">Select Language:</label>
+      <select id="languages" name="lang">
+          <option value="" disabled selected>Select Language</option>
+          <option value="af">Afrikaans: 'af'</option>
+          <option value="sq">Albanian: 'sq'</option>
+          <option value="am">Amharic: 'am'</option>
+          <option value="eu">Basque: 'eu'</option>
+          <option value="be">Belarusian: 'be'</option>
+          <option value="bn">Bengali: 'bn'</option>
+          <option value="bs">Bosnian: 'bs'</option>
+          <option value="bg">Bulgarian: 'bg'</option>
+          <option value="ca">Catalan: 'ca'</option>
+          <option value="ceb">Cebuano: 'ceb'</option>
+          <option value="zh-Hans">Chinese (Simplified): 'zh-Hans'</option>
+          <option value="zh-Hant">Chinese (Traditional): 'zh-Hant'</option>
+          <option value="co">Corsican: 'co'</option>
+          <option value="hr">Croatian: 'hr'</option>
+          <option value="cs">Czech: 'cs'</option>
+          <option value="da">Danish: 'da'</option>
+          <option value="nl">Dutch: 'nl'</option>
+          <option value="en">English: 'en'</option>
+          <option value="eo">Esperanto: 'eo'</option>
+          <option value="et">Estonian: 'et'</option>
+          <option value="fi">Finnish: 'fi'</option>
+          <option value="fr">French: 'fr'</option>
+          <option value="fy">Frisian: 'fy'</option>
+          <option value="gl">Galician: 'gl'</option>
+          <option value="ka">Georgian: 'ka'</option>
+          <option value="de">German: 'de'</option>
+          <option value="el">Greek: 'el'</option>
+          <option value="gu">Gujarati: 'gu'</option>
+          <option value="ht">Haitian Creole: 'ht'</option>
+          <option value="ha">Hausa: 'ha'</option>
+          <option value="haw">Hawaiian: 'haw'</option>
+          <option value="he">Hebrew: 'he'</option>
+          <option value="hi">Hindi: 'hi'</option>
+          <option value="tm">Tamil: 'tm'</option>
+      </select>
+    </div>
+          </div>
+  <div class="link">
+            <button  type="submit">Submit</button>
+          </div>
+            
+          </form>
+        </div>
+
+        <div class="outputcontainer">
+          <h1>YouTube Video Summary</h1>
+          <div class="video-box">
+            <div class="video-title"></div>
+            <div class="video-description">
+              {% if output %}
+              <div>
+                <p>{{ output }}</p>
+              </div>
+              {% endif %}
+      
+            </div>
+          </div>
+        </div>
+      </section>
+    
+  <footer>
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-twitter"></i></a>
+        <a><i class="fa-brands fa-google-plus"></i></a>
+        <a><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div> 
+    <div class="footerNav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Team</a></li>
+      </ul>
+    </div>
+    <div class="footerBottom">
+      <p>Copyright &copy;2024 Made with &#x2661; Designed by<span class="designer">Himani Rajput</span></p>
+    </div>
+  </footer>
+  
+    </section> 
+    </main>
+  </body>
+</html>
